@@ -1,3 +1,56 @@
+🧠 AI Mock Interview System
+
+An AI-powered mock interview platform that helps users practice real-time interviews with voice interaction, instant feedback, and performance insights.
+
+🚀 Features
+
+🎤 Voice-based Interview Simulation – AI asks and listens to your answers using TTS & STT.
+
+🧩 AI Feedback & Scoring – Instant feedback on tone, clarity, and content using Google Gemini.
+
+🔐 User Authentication – Secure login and registration with Firebase Auth.
+
+📊 Performance Report – View transcripts, accuracy, and feedback history; export as PDF.
+
+💾 Cloud Integration – Stores all interview data in Firestore Database.
+
+💬 Smart Question Generation – Personalized interview questions based on topic and experience.
+
+🛠️ Tech Stack
+
+Next.js 16 (Turbopack) – Modern, fast full-stack framework
+
+Firebase – Authentication & database
+
+Tailwind CSS + shadcn/ui – Beautiful, responsive UI
+
+Google Gemini API (via Vapi AI) – AI question and feedback generation
+
+Zod – Secure form validation
+
+Figma – UI/UX design planning
+
+📈 Advantages over existing tools
+
+Fully voice-interactive and AI-adaptive experience
+
+Stores progress and provides AI-driven improvement suggestions
+
+⚠️ Limitations
+
+Requires stable internet for STT and TTS
+
+Current version supports only English interviews
+
+🔮 Future Scope
+
+🗣️ Add multilingual interview support
+
+🧾 Integrate AI-powered resume analysis & PPT report generation
+
+📹 Add video interview mode with emotion recognition
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
