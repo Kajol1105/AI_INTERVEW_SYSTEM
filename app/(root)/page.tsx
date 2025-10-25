@@ -18,6 +18,11 @@ const Page = () => {
                         Start an Interview
                     </Link>
                 </Button>
+                 <Button asChild className="btn-primary max-sm:w-full">
+                     <Link href="/sign-in">
+                         Change account
+                     </Link>
+                 </Button>
              </div>
 
              <Image src="/robot.png" alt="robot" width={400} height={400} className="max-sm:hidden"/>
