@@ -4,7 +4,8 @@ import {db, auth} from "@/firebase/admin";
 import {cookies} from "next/headers";
 import {id} from "zod/locales";
 
-const ONE_WEEK = 60*60*60*24*7
+
+const ONE_WEEK = 60*60*24*7
 
 export async function signUp(params:SignUpParams) {
 
