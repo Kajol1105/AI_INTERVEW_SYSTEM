@@ -3,7 +3,8 @@ import Image from 'next/image'
 import {getRandomInterviewCover} from "@/lib/utils";
 import Link from "next/link";
 import DisplayTechIcons from "@/components/DisplayTechIcons";
-const InterviewCard = ({interviewId, userId, role, type, techstack, createdAt}: InterviewCardProps) => {
+import {Button} from "@/components/ui/button";
+const InterviewCard = ({id, userId, role, type, techstack, createdAt}: InterviewCardProps) => {
     const feedback = null as Feedback | null;
     const normalizedType = /mix/gi.test(type)? 'Mixed': type;
     const formattedDate = dayjs(feedback?.createdAt || createdAt || Date.now()).format('DD MMM,YYYY');
@@ -41,12 +42,12 @@ const InterviewCard = ({interviewId, userId, role, type, techstack, createdAt}: 
                 </div>
                 <div className="flex flex-row justify-between">
                     <DisplayTechIcons techStack={techstack}  />
-                    <button className="btn-primary">
-                        <Link href={feedback?`/interview/${interviewId}/feedback` : `/interview/${interviewId}`}>
+                    <Button className="btn-primary">
+                        <Link href={feedback?`/interview/${id}/feedback` : `/interview/${id}`}>
                             {feedback?'Check Feedback': 'View Interview'}
 
                         </Link>
-                    </button>
+                    </Button>
                 </div>
             </div>
         </div>
